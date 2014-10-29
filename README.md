@@ -11,4 +11,4 @@ The circles are not the blast radius but rather a representation of how many cas
 
 Will look into adding a filter functionality. (Drone strikes by decade, by amount of deaths, etc.)
 
-![ScreenShot](http://i.imgur.com/a3YbfKS.png)
+![ScreenShot](http://i.imgur.com/zlO5dGr.png)
