@@ -8,7 +8,12 @@ function parseStrikes(data) {
     $(data).each(function(id,element){
         var lat = element.lat;
         var long = element.lon;
-        result.push(new google.maps.LatLng(lat, long));
+        var weightDeath = element.deaths_max;
+        var weightedLocation = {
+            location : new google.maps.LatLng(lat, long),
+            weight = weightDeath
+        };
+        result.push(weightedLocation);
     })
     return result;
 }
@@ -45,11 +50,11 @@ function parseStrikes(data) {
         });
 
         heatmap.setMap(map);
-         }
-         google.maps.event.addDomListener(window, 'load', initialize);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
         $.each(parseStrikes(json.strike),function(index,data) {
             pointArray
-     })})
+     })}),
  }
 
 ajaxGet()
